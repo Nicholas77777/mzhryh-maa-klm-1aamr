@@ -41,11 +41,11 @@ class MyBot(BaseBot):
         
     async def on_start(self, SessionMetadata: SessionMetadata) -> None:
         while True:
-            await self.highrise.chat("منورين روم تعارف وصداقة") 
-            await self.highrise.chat("ابتسم الروم مراقب بالكاميرات 😁") # حط مكان الرقم اي شي تبيه 
-            await self.highrise.chat("كل يوم فعاليات في رومنا بتنورونا")
-            time.sleep(10) # الرقم هاد يعني كل متى يرسل الرساله 
+            await self.highrise.chat("Welcome to the BMW Airplane building") 
+            await self.highrise.chat("There is no love after the love of German cars") # حط مكان الرقم اي شي تبيه 
+            await self.highrise.chat("No need to worry about the future")
+            time.sleep(30) # الرقم هاد يعني كل متى يرسل الرساله 
 if __name__== "__main__": 
-    room_id = "664fc6133846c1529586b370"
-    token = "4de6ffb8f6a5ae4f0a8325c1aece5db6273425033bc2464f991e5dda0876dc00"
+    room_id = "66572359188d249f34649c8d"
+    token = "764738b7b911cfeb0e5022d4b73e9354d918697492296a4ee6fb9de75ffb39a3"
     arun(MyBot().run(room_id, token))
